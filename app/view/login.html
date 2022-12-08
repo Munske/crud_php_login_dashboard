@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="assets/img/icon.ico"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://localhost/my/crud_php_login_dashboard/assets/css/reset.css">
+    <link rel="stylesheet" href="http://localhost/my/crud_php_login_dashboard/assets/css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <div id="form_login">
+            <div>
+                <h2>Login</h2>
+            </div>
+            <form action="http://localhost/my/crud_php_login_dashboard/login/check" method="post">
+                <section>
+                    <label for="email" >Email:</label>
+                    <section id="inputEmail">
+                        <input required type="email" id="email" name="email" placeholder="Digite seu email aqui">
+                    </section>
+                    <label for="password">Senha:</label>
+                    <section id="inputPassword">
+                        <input required type="password" id="password" name="password" placeholder="Digite sua senha aqui">
+                        <i id="eyePassword" onclick="eyeClick()" class="fa fa-eye" aria-hidden="true"></i>
+                    </section>
+                    <a href="http://localhost/my/crud_php_login_dashboard/recoveryPassword">Esqueceu sua senha?</a>
+                </section>
+                <aside id="msg_aviso">
+                    {% if msg != '' %}
+                        <h3>{{msg.msg}} <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></h3>
+                    {% endif %}
+                </aside>
+                <section id="section_btns">
+                    <a href="http://localhost/my/crud_php_login_dashboard/registerUser" id="btn_cadastrar">Cadastrar-se</a>
+                    <button id="btn_logar">Logar</button>
+                </section>
+            </form>
+        </div>
+    </main>
+    <script src="http://localhost/my/crud_php_login_dashboard/assets/js/login.js"></script>
+</body>
+
+</html>

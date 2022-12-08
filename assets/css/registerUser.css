@@ -1,0 +1,212 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 320x480 */
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.749);
+}
+
+#form_cadastro{
+    min-width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.705);
+}
+
+#form_cadastro div{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#form_cadastro div h2{
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+#form_cadastro form{
+    width: 100%;
+    gap: 5px;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#form_cadastro form section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#form_cadastro form section label{
+    width: 100%;
+    margin: 5px;
+}
+
+#form_cadastro form section input{
+    width: 96%;
+    min-height: 25px;
+    padding: 5px;
+    text-indent: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 0.6em;
+}
+
+#form_cadastro form section input::placeholder{
+    color:grey;
+    text-indent: 10px;
+    font-size: 1em;
+}
+
+#form_login form #msg_aviso{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+#form_login form #msg_aviso h3{
+    font-size: 0.7em;   
+    color: rgb(0, 139, 144);
+}
+
+#form_cadastro form #section_btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#form_cadastro form #section_btns a{
+    font-size: .8em;
+    text-align: end;
+}
+
+#form_cadastro form section #btn_cadastar{
+    background-color: rgba(0, 128, 0, 0.4);
+    max-width: 60%;
+    padding: 5px;
+    font-size: 0.9em;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+#form_cadastro form #section_btns #btn_voltar_login{
+    margin-top: 5px;
+}
+
+/* 768x1024 */
+@media screen and (min-width: 768px) {
+
+    #form_cadastro{
+        width: 350px;
+    }
+    
+    #form_cadastro div h2{
+        font-size: 3em;
+    }
+    
+    #form_cadastro form section{
+        padding: 20px;
+    }
+
+    #form_cadastro form #msg_aviso h3{
+        font-size: 1em;
+    }
+    
+    #form_cadastro form section label{
+        margin: 15px;
+        font-size: 1.5em;
+    }
+    
+    #form_cadastro form section input{
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    #form_cadastro form section input:hover{
+        transform: scale(1.05);
+    }
+    
+    #form_cadastro form section input::placeholder{
+        font-size: 1em;
+    }
+    
+    #form_cadastro form #section_btns{
+        padding: 20px;
+    }
+    
+    #form_cadastro form section #btn_cadastar{
+        font-size: 1.5em;
+    }
+
+    #form_cadastro form section #btn_cadastar:hover{
+        transform: scale(1.1);
+    }
+    
+    #form_cadastro form #section_btns #btn_cadastrar{
+        font-size: 1.2em;
+    }
+    
+}
+
+/* 1280x720 */
+
+/* 1920x1080 */
+@media screen and (min-width: 1920px) {
+
+    #form_cadastro{
+        width: 400px;
+    }
+    
+    #form_cadastro div h2{
+        font-size: 4em;
+    }
+    
+    #form_cadastro form section{
+        padding: 40px;
+    }
+
+    #form_cadastro form section label{
+        margin: 10px;
+        font-size: 1.5em;
+    }
+    
+    #form_cadastro form section input{
+        padding: 10px;
+    }
+    
+    #form_cadastro form section input::placeholder{
+        font-size: .7em;
+    }
+    
+    #form_cadastro form #section_btns{
+        padding: 40px;
+    }
+    
+    #form_cadastro form section #btn_cadastar:hover{
+        transform: scale(1.1);
+    }
+    
+    #form_cadastro form #section_btns #btn_voltar_login{
+        font-size: 1.2em;
+    }
+}
